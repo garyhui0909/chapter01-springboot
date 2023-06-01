@@ -3,7 +3,8 @@ spring:
     name: Chapter01-SpringBoot
 
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/test
+    #url: jdbc:mysql://127.0.0.1:3306/test
+    url: jdbc:mysql://host.docker.internal:3306/test
     username: root
     password: 123456
     type: com.alibaba.druid.pool.DruidDataSource
