@@ -22,6 +22,13 @@ public class UserController {
     @RequestMapping(value = "/addUser", method = RequestMethod.POST)
     public User getUserById(@RequestParam(value = "username") String username,
             @RequestParam(value = "password") String password) {
+        // Test Comment
+        int a = 1;
+        int b = 0;
+        if(a < 0) {
+            b = 2;
+        }
+
         User user = new User();
         user.setUsername(username);
         user.setPassword(password);
