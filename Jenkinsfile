@@ -12,7 +12,7 @@ node {
       sh "mvn test -Punit"
     }
     stage("Deployment") {
-      sh 'nohup mvn spring-boot:run -Dserver.port=8081 &'
+      sh 'mvn spring-boot:run -Dserver.port=8081 &'
     }
   }
 }
